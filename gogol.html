@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./owlcarusel/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./owlcarusel/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+body {
+  margin: 0;
+  font-family: Open Sans;
+  color: white;
+  background-color: black;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  margin-right: 60px;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 60px;
+}
+
+/* header */
+
+header {
+  padding-left: 70px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.header-inner {
+  display: flex;
+}
+
+.logoImg {
+  width: 180px;
+  height: 122px;
+  margin-right: 20px;
+}
+
+nav {
+  height: 122px;
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  justify-content: right;
+  list-style: none; /*убираем маркеры списка*/
+  padding-left: 0; /*убираем левый отступ, равный 40px*/
+}
+
+li {
+  border: 2px dotted white;
+  width: 463px;
+  height: 30px;
+}
+
+/* posters */
+
+.posters {
+  background-color: black;
+  padding-top: 90px;
+}
+
+h2 {
+  font-size: 48px;
+  margin-left: 270px;
+  margin-bottom: 60px;
+}
+
+.postersInner {
+  margin-left: 70px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.movie {
+  border: 5px dotted #fff;
+  width: 300px;
+}
+
+.poster {
+  transform: scale(1);
+  transition: transform 3s;
+}
+
+.poster:hover {
+  width: 400px;
+}
+
+/* footer */
+footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+}
+.miniLogo {
+  width: 73px;
+  height: 43px;
+  float: left;
+  margin-right: 20px;
+}
+.textFooter {
+  display: flex;
+  flex-direction: column;
+  padding-left: 60px;
+}
+.footerP {
+  color: #504d4d;
+  font-weight: 700;
+}
+span {
+  border: 1px solid red;
+  padding: 2px;
+  color: red;
+  font-size: 28px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 70px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  ;
+}
+
+.img-wrapper {
+  width: calc(35% - 70px);
+  margin-left: 70px;
+ 
+}
+
+.desc {
+  margin-right: 50px;
+  width: calc(65% - 50px - 50px);
+}
+
+.section__heading {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 25px;
+  font-size: 20px;
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    padding-left: 70px; /* отступ на уровне левого края логотипа */
+}
+input{
+    width: 250px;
+    margin-top: 5px;
+}
+.tickets{
+    font-family: Open Sans;
+    padding: 5px;
+    background-color: red;
+    font-weight: 900;
+    margin-top: 5px;
+}
+.banner_heading {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.banner {
+  background-image: url(https://i.ytimg.com/vi/wl2DLhkXIKs/maxresdefault.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 0;
+}
+    </style>
+</head>
+    <body>
+       
+        <header>
+            <div class="header-inner">
+                <div class="logo">
+                    <img class="logoImg" src="https://ds04.infourok.ru/uploads/ex/1252/001163e9-8935a206/hello_html_m5c1e10bc.jpg" alt="logo">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="progect.html">Творчество и Жизнь Гоголя</a></li>
+                    </ul>
+                </nav>
+            </div>         
+        </header>
+        <main class="main">
+            <article>
+                <h2>Жизнь Гоголя</h2>
+                <div class="owl-carousel">
+                <div class="movie">
+                  
+                    <a href="gogoll.html">
+                        <img class="poster" src="https://img1.liveinternet.ru/images/attach/b/3/41/913/41913999__gogol.jpg" alt="gogol">
+                    </a>
+                    <a href="https://youtu.be/GOSeRxUzJ4E">
+                        <input class="tickets" type="button" value="Посмотреть">
+                    </a>
+                    
+                </div>
+                <div class="owl-carousel">
+                  <div class="movie">
+                      
+                    <a href="gogoll.html">
+                        <img class="poster" src="https://img.piri.net/mnresize/900/-/resim/imagecrop/2021/02/07/01/47/resized_6c626-2833532dnikolaygogolprint.jpg" alt="gogol">
+                    </a>
+                    
+                    <a href="https://youtu.be/rYeTloj5fXU">
+                        <input class="tickets" type="button" value="Посмотреть">
+                    </a>
+                </div>
+        </article>
+
+            
+             </main>
+        <footer id="contacts">
+            <div class="footerInner">
+                <div class="textFooter">
+                    <p class="footerP">
+                      Просто нажмите на кнопку "посмотреть" или на саму картинку
+                    </p>
+                </div>
+            </div> 
+        </footer>  
+</body>
+</html>
